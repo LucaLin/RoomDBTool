@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-
+    //新增資料到db
     public void insertData(View v) {
         if (!(TextUtils.isEmpty(edtName.getText().toString())) &&
                 !(TextUtils.isEmpty(edtNum.getText().toString()))) {
@@ -54,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    //取出db資料並且顯示在畫面上
     public void queryData(View v) {
         result = "";
         //用async進行耗時操作
