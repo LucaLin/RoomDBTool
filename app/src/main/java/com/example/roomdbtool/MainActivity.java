@@ -24,12 +24,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        personDB = PersonDB.getInstance(this);
+        init();
 
+    }
+
+    private void init() {
+        personDB = PersonDB.getInstance(this);
         edtName = findViewById(R.id.edtName);
         edtNum = findViewById(R.id.edtPhone);
         txvResult = findViewById(R.id.txvResult);
-
     }
 
     //新增資料到db
